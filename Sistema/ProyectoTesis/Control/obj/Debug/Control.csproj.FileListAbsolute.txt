@@ -1,5 +1,0 @@
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\Control\bin\Debug\Control.dll
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\Control\bin\Debug\Control.pdb
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\Control\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\Control\obj\Debug\Control.dll
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\Control\obj\Debug\Control.pdb
