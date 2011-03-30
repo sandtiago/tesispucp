@@ -1,9 +1,0 @@
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\bin\Debug\ProyectoTesis.exe
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\bin\Debug\ProyectoTesis.pdb
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ProyectoTesis.frmBienvenida.resources
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ProyectoTesis.frmPrincipal.resources
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ProyectoTesis.Properties.Resources.resources
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\GUI.csproj.GenerateResource.Cache
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ProyectoTesis.exe
-C:\Users\Wilder\Desktop\Repositorio Tesis\Sistema\ProyectoTesis\ProyectoTesis\obj\Debug\ProyectoTesis.pdb
