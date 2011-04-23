@@ -1,0 +1,5 @@
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Control\bin\Debug\Control.dll
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Control\bin\Debug\Control.pdb
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Control\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Control\obj\Debug\Control.dll
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Control\obj\Debug\Control.pdb

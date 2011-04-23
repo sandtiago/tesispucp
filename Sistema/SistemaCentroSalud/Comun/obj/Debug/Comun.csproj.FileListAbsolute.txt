@@ -1,0 +1,7 @@
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\bin\Debug\Comun.dll
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\bin\Debug\Comun.pdb
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\obj\Debug\Comun.dll
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\obj\Debug\Comun.pdb
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\bin\Debug\Modelo.dll
+C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Comun\bin\Debug\Modelo.pdb
