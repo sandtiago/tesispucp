@@ -53,10 +53,9 @@
             this.smnuBarraEstado = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMantenimiento = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuArea = new System.Windows.Forms.ToolStripMenuItem();
+            this.médicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrativasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuEspecialidad = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.smnuOcupacion = new System.Windows.Forms.ToolStripMenuItem();
-            this.smnuReligion = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHerramientas = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuCalculadora = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuBlocDeNotas = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +64,7 @@
             this.auditoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.smnuRespaldo = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuReportes = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuVentanas = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuCascada = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuMosaicoVertical = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,8 +89,10 @@
             this.sstInformacion = new System.Windows.Forms.StatusStrip();
             this.tslUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.ttipIconos = new System.Windows.Forms.ToolTip(this.components);
-            this.médicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrativasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.smnuConsulta = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.horarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.tsIconos.SuspendLayout();
             this.sstInformacion.SuspendLayout();
@@ -108,7 +109,7 @@
             this.mnuMantenimiento,
             this.mnuHerramientas,
             this.mnuSeguridad,
-            this.reportesToolStripMenuItem,
+            this.mnuReportes,
             this.mnuVentanas,
             this.mnuAyuda});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
@@ -156,7 +157,9 @@
             // 
             this.mnuAdmision.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.smnuPaciente,
-            this.smnuCitas});
+            this.toolStripSeparator6,
+            this.smnuCitas,
+            this.smnuConsulta});
             this.mnuAdmision.Name = "mnuAdmision";
             this.mnuAdmision.Size = new System.Drawing.Size(70, 20);
             this.mnuAdmision.Text = "&Admisión";
@@ -176,7 +179,7 @@
             this.smnuCitas.Name = "smnuCitas";
             this.smnuCitas.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.smnuCitas.Size = new System.Drawing.Size(160, 22);
-            this.smnuCitas.Text = "Citas";
+            this.smnuCitas.Text = "Cita";
             // 
             // mnuPersonal
             // 
@@ -301,9 +304,8 @@
             this.mnuMantenimiento.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.smnuArea,
             this.smnuEspecialidad,
-            this.toolStripSeparator6,
-            this.smnuOcupacion,
-            this.smnuReligion});
+            this.toolStripSeparator9,
+            this.horarioToolStripMenuItem});
             this.mnuMantenimiento.Name = "mnuMantenimiento";
             this.mnuMantenimiento.Size = new System.Drawing.Size(101, 20);
             this.mnuMantenimiento.Text = "&Mantenimiento";
@@ -317,28 +319,24 @@
             this.smnuArea.Size = new System.Drawing.Size(197, 22);
             this.smnuArea.Text = "Áreas";
             // 
+            // médicasToolStripMenuItem
+            // 
+            this.médicasToolStripMenuItem.Name = "médicasToolStripMenuItem";
+            this.médicasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.médicasToolStripMenuItem.Text = "Médicas";
+            // 
+            // administrativasToolStripMenuItem
+            // 
+            this.administrativasToolStripMenuItem.Name = "administrativasToolStripMenuItem";
+            this.administrativasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.administrativasToolStripMenuItem.Text = "Administrativas";
+            // 
             // smnuEspecialidad
             // 
+            this.smnuEspecialidad.Image = ((System.Drawing.Image)(resources.GetObject("smnuEspecialidad.Image")));
             this.smnuEspecialidad.Name = "smnuEspecialidad";
             this.smnuEspecialidad.Size = new System.Drawing.Size(197, 22);
             this.smnuEspecialidad.Text = "Especialidades Médicas";
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(194, 6);
-            // 
-            // smnuOcupacion
-            // 
-            this.smnuOcupacion.Name = "smnuOcupacion";
-            this.smnuOcupacion.Size = new System.Drawing.Size(197, 22);
-            this.smnuOcupacion.Text = "Ocupaciones";
-            // 
-            // smnuReligion
-            // 
-            this.smnuReligion.Name = "smnuReligion";
-            this.smnuReligion.Size = new System.Drawing.Size(197, 22);
-            this.smnuReligion.Text = "Religiones";
             // 
             // mnuHerramientas
             // 
@@ -381,7 +379,8 @@
             this.smnuPerfil.Image = ((System.Drawing.Image)(resources.GetObject("smnuPerfil.Image")));
             this.smnuPerfil.Name = "smnuPerfil";
             this.smnuPerfil.Size = new System.Drawing.Size(152, 22);
-            this.smnuPerfil.Text = "Perfiles";
+            this.smnuPerfil.Text = "Perfil";
+            this.smnuPerfil.Click += new System.EventHandler(this.smnuPerfil_Click);
             // 
             // auditoríaToolStripMenuItem
             // 
@@ -402,11 +401,11 @@
             this.smnuRespaldo.Size = new System.Drawing.Size(152, 22);
             this.smnuRespaldo.Text = "Respaldo";
             // 
-            // reportesToolStripMenuItem
+            // mnuReportes
             // 
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "&Reportes";
+            this.mnuReportes.Name = "mnuReportes";
+            this.mnuReportes.Size = new System.Drawing.Size(65, 20);
+            this.mnuReportes.Text = "&Reportes";
             // 
             // mnuVentanas
             // 
@@ -600,17 +599,30 @@
             this.tslUsuario.Size = new System.Drawing.Size(53, 17);
             this.tslUsuario.Text = "Usuario: ";
             // 
-            // médicasToolStripMenuItem
+            // smnuConsulta
             // 
-            this.médicasToolStripMenuItem.Name = "médicasToolStripMenuItem";
-            this.médicasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.médicasToolStripMenuItem.Text = "Médicas";
+            this.smnuConsulta.Image = ((System.Drawing.Image)(resources.GetObject("smnuConsulta.Image")));
+            this.smnuConsulta.Name = "smnuConsulta";
+            this.smnuConsulta.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.smnuConsulta.Size = new System.Drawing.Size(161, 22);
+            this.smnuConsulta.Text = "Consulta";
             // 
-            // administrativasToolStripMenuItem
+            // toolStripSeparator6
             // 
-            this.administrativasToolStripMenuItem.Name = "administrativasToolStripMenuItem";
-            this.administrativasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.administrativasToolStripMenuItem.Text = "Administrativas";
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(157, 6);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(194, 6);
+            // 
+            // horarioToolStripMenuItem
+            // 
+            this.horarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("horarioToolStripMenuItem.Image")));
+            this.horarioToolStripMenuItem.Name = "horarioToolStripMenuItem";
+            this.horarioToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.horarioToolStripMenuItem.Text = "Horario";
             // 
             // frmPrincipal
             // 
@@ -675,8 +687,6 @@
         private System.Windows.Forms.ToolStripMenuItem smnuPerfil;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem smnuRespaldo;
-        private System.Windows.Forms.ToolStripMenuItem smnuOcupacion;
-        private System.Windows.Forms.ToolStripMenuItem smnuReligion;
         private System.Windows.Forms.ToolStripMenuItem smnuDoctor;
         private System.Windows.Forms.ToolStripMenuItem smnuEnfermera;
         private System.Windows.Forms.ToolStripMenuItem smnuTecnico;
@@ -685,8 +695,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuDoctor;
         private System.Windows.Forms.ToolStripMenuItem smnuHistoriaClinica;
         private System.Windows.Forms.ToolStripMenuItem smnuFormularioHIS;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnuReportes;
         private System.Windows.Forms.ToolStripButton tsbContrasena;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton tsbPaciente;
@@ -703,6 +712,10 @@
         private System.Windows.Forms.ToolStripMenuItem auditoríaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem médicasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrativasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem smnuConsulta;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripMenuItem horarioToolStripMenuItem;
     }
 }
 

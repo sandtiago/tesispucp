@@ -11,6 +11,7 @@ using SistemaCentroSalud.Ventanas_Doctor;
 using System.Diagnostics;
 using Comun;
 using SistemaCentroSalud.Ventanas_Ayuda;
+using SistemaCentroSalud.Ventanas_Seguridad;
 
 namespace SistemaCentroSalud
 {
@@ -220,7 +221,14 @@ namespace SistemaCentroSalud
 
         private void smnuHistoriaClinica_Click(object sender, EventArgs e)
         {
-            frmHistorialClinica ventanaHistoriaClinica = new frmHistorialClinica();
+            bool blnHistoriaClinicaCompleta = false;
+
+            if (smnuHistoriaClinicaCompleta.Checked)
+            {
+                blnHistoriaClinicaCompleta = true;
+            }
+
+            frmHistorialClinica ventanaHistoriaClinica = new frmHistorialClinica(blnHistoriaClinicaCompleta);
             ventanaHistoriaClinica.MdiParent = this;
             ventanaHistoriaClinica.Show();
         }
@@ -230,6 +238,13 @@ namespace SistemaCentroSalud
             frmAdministrativo ventanaAdministrativo = new frmAdministrativo();
             ventanaAdministrativo.MdiParent = this;
             ventanaAdministrativo.Show();
+        }
+
+        private void smnuPerfil_Click(object sender, EventArgs e)
+        {
+            frmPerfil ventanaPerfil = new frmPerfil();
+            ventanaPerfil.MdiParent = this;
+            ventanaPerfil.Show();
         }
 
         private void smnuAcercaDe_Click(object sender, EventArgs e)
