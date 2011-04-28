@@ -37,7 +37,9 @@
             this.smnuSalir = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuAdmision = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuPaciente = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.smnuCitas = new System.Windows.Forms.ToolStripMenuItem();
+            this.smnuConsulta = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPersonal = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuDoctor = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuEnfermera = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +58,8 @@
             this.médicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrativasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuEspecialidad = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
+            this.horarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHerramientas = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuCalculadora = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuBlocDeNotas = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,10 +93,6 @@
             this.sstInformacion = new System.Windows.Forms.StatusStrip();
             this.tslUsuario = new System.Windows.Forms.ToolStripStatusLabel();
             this.ttipIconos = new System.Windows.Forms.ToolTip(this.components);
-            this.smnuConsulta = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.horarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.tsIconos.SuspendLayout();
             this.sstInformacion.SuspendLayout();
@@ -169,17 +169,30 @@
             this.smnuPaciente.Image = ((System.Drawing.Image)(resources.GetObject("smnuPaciente.Image")));
             this.smnuPaciente.Name = "smnuPaciente";
             this.smnuPaciente.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.smnuPaciente.Size = new System.Drawing.Size(160, 22);
+            this.smnuPaciente.Size = new System.Drawing.Size(161, 22);
             this.smnuPaciente.Text = "Paciente";
             this.smnuPaciente.Click += new System.EventHandler(this.smnuPaciente_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(158, 6);
             // 
             // smnuCitas
             // 
             this.smnuCitas.Image = ((System.Drawing.Image)(resources.GetObject("smnuCitas.Image")));
             this.smnuCitas.Name = "smnuCitas";
             this.smnuCitas.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.smnuCitas.Size = new System.Drawing.Size(160, 22);
+            this.smnuCitas.Size = new System.Drawing.Size(161, 22);
             this.smnuCitas.Text = "Cita";
+            // 
+            // smnuConsulta
+            // 
+            this.smnuConsulta.Image = ((System.Drawing.Image)(resources.GetObject("smnuConsulta.Image")));
+            this.smnuConsulta.Name = "smnuConsulta";
+            this.smnuConsulta.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.smnuConsulta.Size = new System.Drawing.Size(161, 22);
+            this.smnuConsulta.Text = "Consulta";
             // 
             // mnuPersonal
             // 
@@ -338,6 +351,18 @@
             this.smnuEspecialidad.Size = new System.Drawing.Size(197, 22);
             this.smnuEspecialidad.Text = "Especialidades Médicas";
             // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(194, 6);
+            // 
+            // horarioToolStripMenuItem
+            // 
+            this.horarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("horarioToolStripMenuItem.Image")));
+            this.horarioToolStripMenuItem.Name = "horarioToolStripMenuItem";
+            this.horarioToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.horarioToolStripMenuItem.Text = "Horario";
+            // 
             // mnuHerramientas
             // 
             this.mnuHerramientas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -351,7 +376,7 @@
             // 
             this.smnuCalculadora.Image = ((System.Drawing.Image)(resources.GetObject("smnuCalculadora.Image")));
             this.smnuCalculadora.Name = "smnuCalculadora";
-            this.smnuCalculadora.Size = new System.Drawing.Size(152, 22);
+            this.smnuCalculadora.Size = new System.Drawing.Size(147, 22);
             this.smnuCalculadora.Text = "Calculadora";
             this.smnuCalculadora.Click += new System.EventHandler(this.smnuCalculadora_Click);
             // 
@@ -359,7 +384,7 @@
             // 
             this.smnuBlocDeNotas.Image = ((System.Drawing.Image)(resources.GetObject("smnuBlocDeNotas.Image")));
             this.smnuBlocDeNotas.Name = "smnuBlocDeNotas";
-            this.smnuBlocDeNotas.Size = new System.Drawing.Size(152, 22);
+            this.smnuBlocDeNotas.Size = new System.Drawing.Size(147, 22);
             this.smnuBlocDeNotas.Text = "Bloc de Notas";
             this.smnuBlocDeNotas.Click += new System.EventHandler(this.smnuBlocDeNotas_Click);
             // 
@@ -378,7 +403,7 @@
             // 
             this.smnuPerfil.Image = ((System.Drawing.Image)(resources.GetObject("smnuPerfil.Image")));
             this.smnuPerfil.Name = "smnuPerfil";
-            this.smnuPerfil.Size = new System.Drawing.Size(152, 22);
+            this.smnuPerfil.Size = new System.Drawing.Size(123, 22);
             this.smnuPerfil.Text = "Perfil";
             this.smnuPerfil.Click += new System.EventHandler(this.smnuPerfil_Click);
             // 
@@ -386,19 +411,19 @@
             // 
             this.auditoríaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("auditoríaToolStripMenuItem.Image")));
             this.auditoríaToolStripMenuItem.Name = "auditoríaToolStripMenuItem";
-            this.auditoríaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.auditoríaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.auditoríaToolStripMenuItem.Text = "Auditoría";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(120, 6);
             // 
             // smnuRespaldo
             // 
             this.smnuRespaldo.Image = ((System.Drawing.Image)(resources.GetObject("smnuRespaldo.Image")));
             this.smnuRespaldo.Name = "smnuRespaldo";
-            this.smnuRespaldo.Size = new System.Drawing.Size(152, 22);
+            this.smnuRespaldo.Size = new System.Drawing.Size(123, 22);
             this.smnuRespaldo.Text = "Respaldo";
             // 
             // mnuReportes
@@ -509,7 +534,7 @@
             this.tsIconos.Name = "tsIconos";
             this.tsIconos.Size = new System.Drawing.Size(802, 25);
             this.tsIconos.TabIndex = 1;
-            this.tsIconos.Text = "ToolStrip";
+            this.tsIconos.Text = "tsIconos";
             // 
             // tsbContrasena
             // 
@@ -558,6 +583,7 @@
             this.tsbHistoriaClinica.Name = "tsbHistoriaClinica";
             this.tsbHistoriaClinica.Size = new System.Drawing.Size(23, 22);
             this.tsbHistoriaClinica.Text = "Historia Clínica";
+            this.tsbHistoriaClinica.Click += new System.EventHandler(this.tsbHistoriaClinica_Click);
             // 
             // tsbFormularioHIS
             // 
@@ -598,31 +624,6 @@
             this.tslUsuario.Name = "tslUsuario";
             this.tslUsuario.Size = new System.Drawing.Size(53, 17);
             this.tslUsuario.Text = "Usuario: ";
-            // 
-            // smnuConsulta
-            // 
-            this.smnuConsulta.Image = ((System.Drawing.Image)(resources.GetObject("smnuConsulta.Image")));
-            this.smnuConsulta.Name = "smnuConsulta";
-            this.smnuConsulta.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.smnuConsulta.Size = new System.Drawing.Size(161, 22);
-            this.smnuConsulta.Text = "Consulta";
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(157, 6);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(194, 6);
-            // 
-            // horarioToolStripMenuItem
-            // 
-            this.horarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("horarioToolStripMenuItem.Image")));
-            this.horarioToolStripMenuItem.Name = "horarioToolStripMenuItem";
-            this.horarioToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.horarioToolStripMenuItem.Text = "Horario";
             // 
             // frmPrincipal
             // 

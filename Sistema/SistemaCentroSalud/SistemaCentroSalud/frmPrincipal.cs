@@ -252,5 +252,19 @@ namespace SistemaCentroSalud
             frmAcercaDe ventanaAcercaDe = new frmAcercaDe();
             ventanaAcercaDe.ShowDialog();
         }
+
+        private void tsbHistoriaClinica_Click(object sender, EventArgs e)
+        {
+            bool blnHistoriaClinicaCompleta = false;
+
+            if (smnuHistoriaClinicaCompleta.Checked)
+            {
+                blnHistoriaClinicaCompleta = true;
+            }
+
+            frmHistorialClinica ventanaHistoriaClinica = new frmHistorialClinica(blnHistoriaClinicaCompleta);
+            ventanaHistoriaClinica.MdiParent = this;
+            ventanaHistoriaClinica.Show();
+        }
     }
 }

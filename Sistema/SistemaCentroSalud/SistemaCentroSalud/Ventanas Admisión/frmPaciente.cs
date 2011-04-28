@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Comun;
 
 namespace SistemaCentroSalud
 {
@@ -22,25 +23,9 @@ namespace SistemaCentroSalud
             tbpDetalle.Enabled = false;
         }
 
-        private void tabSiguiente()
-        {
-            tbpDetalle.Enabled = true;
-            tbpBuscar.Enabled = false;
-
-            tbcPacientes.SelectedTab = tbpDetalle;
-        }
-
-        private void tabAnterior()
-        {
-            tbpBuscar.Enabled = true;
-            tbpDetalle.Enabled = false;
-
-            tbcPacientes.SelectedTab = tbpBuscar;
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            tabSiguiente();
+            clsComun.tabSiguiente(tbcPacientes, tbpBuscar, tbpDetalle);
             
             txtPaterno.Focus();
         }
@@ -71,7 +56,7 @@ namespace SistemaCentroSalud
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            tabAnterior();
+            clsComun.tabAnterior(tbcPacientes,tbpBuscar,tbpDetalle);
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

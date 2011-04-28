@@ -46,11 +46,6 @@
             this.colDistrito = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbxCriterios = new System.Windows.Forms.GroupBox();
             this.tbpDetalle = new System.Windows.Forms.TabPage();
-            this.gbxTipoSangre = new System.Windows.Forms.GroupBox();
-            this.cboFactorSanguineo = new System.Windows.Forms.ComboBox();
-            this.lblFactorSanguineo = new System.Windows.Forms.Label();
-            this.cboGrupoSanguineo = new System.Windows.Forms.ComboBox();
-            this.lblGrupoSanguineo = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.gbxDomicilio = new System.Windows.Forms.GroupBox();
@@ -93,6 +88,9 @@
             this.lblNombres = new System.Windows.Forms.Label();
             this.lblMaterno = new System.Windows.Forms.Label();
             this.lblPaterno = new System.Windows.Forms.Label();
+            this.gbxHistoriaClinica = new System.Windows.Forms.GroupBox();
+            this.lblNumeroHistoriaClinica = new System.Windows.Forms.Label();
+            this.txtNumeroHistoriaClinica = new SistemaCentroSalud.Controles.cuTextBox();
             this.txtDireccion = new SistemaCentroSalud.Controles.cuTextBox();
             this.txtCorreoElectronico = new SistemaCentroSalud.Controles.cuTextBox();
             this.txtCelular = new SistemaCentroSalud.Controles.cuTextBox();
@@ -105,11 +103,11 @@
             this.tbpBuscar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).BeginInit();
             this.tbpDetalle.SuspendLayout();
-            this.gbxTipoSangre.SuspendLayout();
             this.gbxDomicilio.SuspendLayout();
             this.gbxContacto.SuspendLayout();
             this.gbxLugarNacimiento.SuspendLayout();
             this.gbxPersonal.SuspendLayout();
+            this.gbxHistoriaClinica.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcPacientes
@@ -274,7 +272,7 @@
             // 
             // tbpDetalle
             // 
-            this.tbpDetalle.Controls.Add(this.gbxTipoSangre);
+            this.tbpDetalle.Controls.Add(this.gbxHistoriaClinica);
             this.tbpDetalle.Controls.Add(this.btnGuardar);
             this.tbpDetalle.Controls.Add(this.btnCancelar);
             this.tbpDetalle.Controls.Add(this.gbxDomicilio);
@@ -289,63 +287,6 @@
             this.tbpDetalle.Text = "Detalle";
             this.tbpDetalle.UseVisualStyleBackColor = true;
             // 
-            // gbxTipoSangre
-            // 
-            this.gbxTipoSangre.Controls.Add(this.cboFactorSanguineo);
-            this.gbxTipoSangre.Controls.Add(this.lblFactorSanguineo);
-            this.gbxTipoSangre.Controls.Add(this.cboGrupoSanguineo);
-            this.gbxTipoSangre.Controls.Add(this.lblGrupoSanguineo);
-            this.gbxTipoSangre.Location = new System.Drawing.Point(559, 160);
-            this.gbxTipoSangre.Name = "gbxTipoSangre";
-            this.gbxTipoSangre.Size = new System.Drawing.Size(213, 109);
-            this.gbxTipoSangre.TabIndex = 26;
-            this.gbxTipoSangre.TabStop = false;
-            this.gbxTipoSangre.Text = "Tipo de Sangre";
-            // 
-            // cboFactorSanguineo
-            // 
-            this.cboFactorSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboFactorSanguineo.FormattingEnabled = true;
-            this.cboFactorSanguineo.Items.AddRange(new object[] {
-            "Rh+",
-            "Rh-"});
-            this.cboFactorSanguineo.Location = new System.Drawing.Point(10, 72);
-            this.cboFactorSanguineo.Name = "cboFactorSanguineo";
-            this.cboFactorSanguineo.Size = new System.Drawing.Size(112, 21);
-            this.cboFactorSanguineo.TabIndex = 28;
-            // 
-            // lblFactorSanguineo
-            // 
-            this.lblFactorSanguineo.AutoSize = true;
-            this.lblFactorSanguineo.Location = new System.Drawing.Point(7, 56);
-            this.lblFactorSanguineo.Name = "lblFactorSanguineo";
-            this.lblFactorSanguineo.Size = new System.Drawing.Size(96, 13);
-            this.lblFactorSanguineo.TabIndex = 18;
-            this.lblFactorSanguineo.Text = "Factor Sanguíneo:";
-            // 
-            // cboGrupoSanguineo
-            // 
-            this.cboGrupoSanguineo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGrupoSanguineo.FormattingEnabled = true;
-            this.cboGrupoSanguineo.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "AB",
-            "O"});
-            this.cboGrupoSanguineo.Location = new System.Drawing.Point(10, 32);
-            this.cboGrupoSanguineo.Name = "cboGrupoSanguineo";
-            this.cboGrupoSanguineo.Size = new System.Drawing.Size(112, 21);
-            this.cboGrupoSanguineo.TabIndex = 27;
-            // 
-            // lblGrupoSanguineo
-            // 
-            this.lblGrupoSanguineo.AutoSize = true;
-            this.lblGrupoSanguineo.Location = new System.Drawing.Point(7, 16);
-            this.lblGrupoSanguineo.Name = "lblGrupoSanguineo";
-            this.lblGrupoSanguineo.Size = new System.Drawing.Size(95, 13);
-            this.lblGrupoSanguineo.TabIndex = 0;
-            this.lblGrupoSanguineo.Text = "Grupo Sanguíneo:";
-            // 
             // btnGuardar
             // 
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
@@ -353,7 +294,7 @@
             this.btnGuardar.Location = new System.Drawing.Point(689, 325);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 29;
+            this.btnGuardar.TabIndex = 25;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -366,7 +307,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(573, 325);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 30;
+            this.btnCancelar.TabIndex = 26;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -785,6 +726,35 @@
             this.lblPaterno.TabIndex = 0;
             this.lblPaterno.Text = "Apellido Paterno:";
             // 
+            // gbxHistoriaClinica
+            // 
+            this.gbxHistoriaClinica.Controls.Add(this.txtNumeroHistoriaClinica);
+            this.gbxHistoriaClinica.Controls.Add(this.lblNumeroHistoriaClinica);
+            this.gbxHistoriaClinica.Location = new System.Drawing.Point(559, 160);
+            this.gbxHistoriaClinica.Name = "gbxHistoriaClinica";
+            this.gbxHistoriaClinica.Size = new System.Drawing.Size(214, 72);
+            this.gbxHistoriaClinica.TabIndex = 23;
+            this.gbxHistoriaClinica.TabStop = false;
+            this.gbxHistoriaClinica.Text = "Historia Clínica";
+            // 
+            // lblNumeroHistoriaClinica
+            // 
+            this.lblNumeroHistoriaClinica.AutoSize = true;
+            this.lblNumeroHistoriaClinica.Location = new System.Drawing.Point(7, 16);
+            this.lblNumeroHistoriaClinica.Name = "lblNumeroHistoriaClinica";
+            this.lblNumeroHistoriaClinica.Size = new System.Drawing.Size(98, 13);
+            this.lblNumeroHistoriaClinica.TabIndex = 0;
+            this.lblNumeroHistoriaClinica.Text = "No. Historia Clínica";
+            // 
+            // txtNumeroHistoriaClinica
+            // 
+            this.txtNumeroHistoriaClinica.Location = new System.Drawing.Point(10, 33);
+            this.txtNumeroHistoriaClinica.Name = "txtNumeroHistoriaClinica";
+            this.txtNumeroHistoriaClinica.Size = new System.Drawing.Size(125, 20);
+            this.txtNumeroHistoriaClinica.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
+            this.txtNumeroHistoriaClinica.TabIndex = 24;
+            this.txtNumeroHistoriaClinica.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloNumeros;
+            // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(10, 83);
@@ -874,8 +844,6 @@
             this.tbpBuscar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacientes)).EndInit();
             this.tbpDetalle.ResumeLayout(false);
-            this.gbxTipoSangre.ResumeLayout(false);
-            this.gbxTipoSangre.PerformLayout();
             this.gbxDomicilio.ResumeLayout(false);
             this.gbxDomicilio.PerformLayout();
             this.gbxContacto.ResumeLayout(false);
@@ -884,6 +852,8 @@
             this.gbxLugarNacimiento.PerformLayout();
             this.gbxPersonal.ResumeLayout(false);
             this.gbxPersonal.PerformLayout();
+            this.gbxHistoriaClinica.ResumeLayout(false);
+            this.gbxHistoriaClinica.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -945,11 +915,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colDepartamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn colProvincia;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDistrito;
-        private System.Windows.Forms.GroupBox gbxTipoSangre;
-        private System.Windows.Forms.Label lblFactorSanguineo;
-        private System.Windows.Forms.ComboBox cboGrupoSanguineo;
-        private System.Windows.Forms.Label lblGrupoSanguineo;
-        private System.Windows.Forms.ComboBox cboFactorSanguineo;
         private SistemaCentroSalud.Controles.cuTextBox txtCorreoElectronico;
         private SistemaCentroSalud.Controles.cuTextBox txtCelular;
         private SistemaCentroSalud.Controles.cuTextBox txtTelefono;
@@ -962,5 +927,8 @@
         private System.Windows.Forms.Button btnVer;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.GroupBox gbxHistoriaClinica;
+        private SistemaCentroSalud.Controles.cuTextBox txtNumeroHistoriaClinica;
+        private System.Windows.Forms.Label lblNumeroHistoriaClinica;
     }
 }

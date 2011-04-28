@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Comun;
 
 namespace SistemaCentroSalud.Ventanas_Personal
 {
@@ -22,51 +23,21 @@ namespace SistemaCentroSalud.Ventanas_Personal
             tbpDetalle.Enabled = false;
         }
 
-        private void ampliarVentana()
-        {
-            tbcAdministrativo.Width = 784;
-            tbcAdministrativo.Height = 416;
-            this.Width = 791;
-            this.Height = 443;
-        }
-
-        private void reducirVentana()
-        {
-            tbcAdministrativo.Width = 469;
-            tbcAdministrativo.Height = 416;
-            this.Width = 473;
-            this.Height = 443;
-        }
-
-        private void tabSiguiente()
-        {
-            tbpDetalle.Enabled = true;
-            tbpBuscar.Enabled = false;
-
-            tbcAdministrativo.SelectedTab = tbpDetalle;
-        }
-
-        private void tabAnterior()
-        {
-            tbpBuscar.Enabled = true;
-            tbpDetalle.Enabled = false;
-
-            tbcAdministrativo.SelectedTab = tbpBuscar;
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            tabSiguiente();
+            clsComun.tabSiguiente(tbcAdministrativo, tbpBuscar, tbpDetalle);
 
             txtPaterno.Focus();
-            ampliarVentana();
+            clsComun.redimensionarTabControl(tbcAdministrativo, 784, 416);
+            clsComun.redimensionarVentana(this, 791, 443);
         }
 
         private void btnVer_Click(object sender, EventArgs e)
         {
             if (dgvAdministrativos.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcAdministrativo, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 443);
             }
             else
             {
@@ -78,7 +49,8 @@ namespace SistemaCentroSalud.Ventanas_Personal
         {
             if (dgvAdministrativos.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcAdministrativo, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 443);
             }
             else
             {
@@ -93,9 +65,10 @@ namespace SistemaCentroSalud.Ventanas_Personal
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            tabAnterior();
+            clsComun.tabAnterior(tbcAdministrativo, tbpBuscar, tbpDetalle);
 
-            reducirVentana();
+            clsComun.redimensionarTabControl(tbcAdministrativo, 469, 416);
+            clsComun.redimensionarVentana(this, 473, 443);
         }
 
         private void tbcAdministrativo_Selecting(object sender, TabControlCancelEventArgs e)

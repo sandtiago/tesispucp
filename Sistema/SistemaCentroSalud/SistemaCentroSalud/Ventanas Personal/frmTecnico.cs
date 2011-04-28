@@ -23,51 +23,21 @@ namespace SistemaCentroSalud.Ventanas_Personal
             tbpDetalle.Enabled = false;
         }
 
-        private void ampliarVentana()
-        {
-            tbcTecnico.Width = 784;
-            tbcTecnico.Height = 416;
-            this.Width = 791;
-            this.Height = 443;
-        }
-
-        private void reducirVentana()
-        {
-            tbcTecnico.Width = 469;
-            tbcTecnico.Height = 416;
-            this.Width = 473;
-            this.Height = 443;
-        }
-
-        private void tabSiguiente()
-        {
-            tbpDetalle.Enabled = true;
-            tbpBuscar.Enabled = false;
-
-            tbcTecnico.SelectedTab = tbpDetalle;
-        }
-
-        private void tabAnterior()
-        {
-            tbpBuscar.Enabled = true;
-            tbpDetalle.Enabled = false;
-
-            tbcTecnico.SelectedTab = tbpBuscar;
-        }
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            tabSiguiente();
+            clsComun.tabSiguiente(tbcTecnico, tbpBuscar, tbpDetalle);
 
             txtPaterno.Focus();
-            ampliarVentana();
+            clsComun.redimensionarTabControl(tbcTecnico, 784, 416);
+            clsComun.redimensionarVentana(this, 791, 443);
         }
 
         private void btnVer_Click(object sender, EventArgs e)
         {
             if (dgvTecnicos.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcTecnico, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 443);
             }
             else
             {
@@ -79,7 +49,8 @@ namespace SistemaCentroSalud.Ventanas_Personal
         {
             if (dgvTecnicos.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcTecnico, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 443);
             }
             else
             {
@@ -94,9 +65,10 @@ namespace SistemaCentroSalud.Ventanas_Personal
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            tabAnterior();
+            clsComun.tabAnterior(tbcTecnico, tbpBuscar, tbpDetalle);
 
-            reducirVentana();
+            clsComun.redimensionarTabControl(tbcTecnico, 469, 416);
+            clsComun.redimensionarVentana(this, 473, 443);
         }
 
         private void tbcTecnico_Selecting(object sender, TabControlCancelEventArgs e)
