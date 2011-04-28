@@ -11,6 +11,7 @@ using SistemaCentroSalud.Ventanas_Doctor;
 using System.Diagnostics;
 using Comun;
 using SistemaCentroSalud.Ventanas_Ayuda;
+using SistemaCentroSalud.Ventanas_Seguridad;
 
 namespace SistemaCentroSalud
 {
@@ -241,9 +242,9 @@ namespace SistemaCentroSalud
 
         private void smnuPerfil_Click(object sender, EventArgs e)
         {
-            //frmPerfil ventanaPerfil = new frmPerfil();
-            //ventanaPerfil.MdiParent = this;
-            //ventanaPerfil.Show();
+            frmPerfil ventanaPerfil = new frmPerfil();
+            ventanaPerfil.MdiParent = this;
+            ventanaPerfil.Show();
         }
 
         private void smnuAcercaDe_Click(object sender, EventArgs e)

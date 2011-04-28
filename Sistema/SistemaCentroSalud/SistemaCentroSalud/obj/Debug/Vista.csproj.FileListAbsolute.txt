@@ -40,3 +40,4 @@ C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.Ventanas_Personal.frmEnfermera.resources
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.Ventanas_Personal.frmTecnico.resources
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\Vista.csproj.GenerateResource.Cache
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.Ventanas_Seguridad.frmPerfil.resources
