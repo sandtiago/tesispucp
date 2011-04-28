@@ -3,3 +3,8 @@ C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Modelo\
 C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Modelo\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Modelo\obj\Debug\Modelo.dll
 C:\Users\Wilder\Documents\Visual Studio 2008\Projects\SistemaCentroSalud\Modelo\obj\Debug\Modelo.pdb
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\Modelo\bin\Debug\Modelo.dll
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\Modelo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\Modelo\obj\Debug\Modelo.dll
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\Modelo\obj\Debug\Modelo.pdb
