@@ -71,6 +71,8 @@
             this.tbcHistoriaClinica.SelectedIndex = 0;
             this.tbcHistoriaClinica.Size = new System.Drawing.Size(820, 435);
             this.tbcHistoriaClinica.TabIndex = 0;
+            this.tbcHistoriaClinica.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tbcHistoriaClinica_Selecting);
+            this.tbcHistoriaClinica.SelectedIndexChanged += new System.EventHandler(this.tbcHistoriaClinica_SelectedIndexChanged);
             // 
             // tbpBuscar
             // 

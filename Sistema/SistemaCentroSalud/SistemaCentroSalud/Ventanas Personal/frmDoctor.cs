@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Comun;
 
 namespace SistemaCentroSalud.Ventanas_Personal
 {
@@ -14,28 +15,14 @@ namespace SistemaCentroSalud.Ventanas_Personal
         public frmDoctor()
         {
             InitializeComponent();
+
+            clsComun.redimensionarVentana(this, 578, 444);
         }
 
         private void frmDoctor_Load(object sender, EventArgs e)
         {
             tbpBuscar.Enabled = true;
             tbpDetalle.Enabled = false;
-        }
-
-        private void ampliarVentana()
-        {
-            tbcDoctor.Width = 784;
-            tbcDoctor.Height = 416;
-            this.Width = 791;
-            this.Height = 444;
-        }
-
-        private void reducirVentana()
-        {
-            tbcDoctor.Width = 572;
-            tbcDoctor.Height = 416;
-            this.Width = 578;
-            this.Height = 444;
         }
 
         private void tabSiguiente()
@@ -63,7 +50,8 @@ namespace SistemaCentroSalud.Ventanas_Personal
         {
             tabAnterior();
 
-            reducirVentana();
+            clsComun.redimensionarTabControl(tbcDoctor, 572, 416);
+            clsComun.redimensionarVentana(this, 578, 444);
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -71,14 +59,17 @@ namespace SistemaCentroSalud.Ventanas_Personal
             tabSiguiente();
 
             txtPaterno.Focus();
-            ampliarVentana();
+
+            clsComun.redimensionarTabControl(tbcDoctor, 784, 416);
+            clsComun.redimensionarVentana(this, 791, 444);
         }
 
         private void btnVer_Click(object sender, EventArgs e)
         {
             if (dgvDoctores.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcDoctor, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 444);
             }
             else
             {
@@ -90,7 +81,8 @@ namespace SistemaCentroSalud.Ventanas_Personal
         {
             if (dgvDoctores.SelectedRows.Count > 0)
             {
-                ampliarVentana();
+                clsComun.redimensionarTabControl(tbcDoctor, 784, 416);
+                clsComun.redimensionarVentana(this, 791, 444);
             }
             else
             {

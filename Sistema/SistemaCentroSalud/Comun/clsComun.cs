@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Net.Mail;
 using Modelo;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Comun
 {
@@ -52,7 +53,7 @@ namespace Comun
             }
         }
 
-        public static bool enviarCorreo(string destinatario, clsPersonal objPersonal)
+        public static bool enviarCorreo(string strDestinatario, clsPersonal objPersonal)
         {
             try
             {
@@ -62,7 +63,7 @@ namespace Comun
                 string cuerpo = "";
 
                 correo.From = new MailAddress("sistema.centro.salud@gmail.com", "Sistema Centro de Salud", System.Text.Encoding.UTF8);
-                correo.To.Add(destinatario);
+                correo.To.Add(strDestinatario);
                 correo.Subject = asunto;
                 correo.SubjectEncoding = System.Text.Encoding.UTF8;
 
@@ -121,6 +122,46 @@ namespace Comun
             }
 
             return new string(chrCaracteres);
+        }
+
+        public static void tabSiguiente(TabControl tbc, TabPage tbpBuscar, TabPage tbpDetalle)
+        {
+            tbpDetalle.Enabled = true;
+            tbpBuscar.Enabled = false;
+
+            tbc.SelectedTab = tbpDetalle;
+        }
+
+        public static void tabAnterior(TabControl tbc, TabPage tbpBuscar, TabPage tbpDetalle)
+        {
+            tbpBuscar.Enabled = true;
+            tbpDetalle.Enabled = false;
+
+            tbc.SelectedTab = tbpBuscar;
+        }
+
+        public static void redimensionarTabControl(TabControl tbc, int numAncho, int numAlto)
+        {
+            tbc.Width = numAncho;
+            tbc.Height = numAlto;
+        }
+
+        public static void redimensionarVentana(Form frmVentana, int numAncho, int numAlto)
+        {
+            frmVentana.Width = numAncho;
+            frmVentana.Height = numAlto;
+        }
+
+        public static void llenarComboBox(ComboBox cbo, int numIndicePorDefecto)
+        {
+            if (numIndicePorDefecto == -1)
+            {
+
+            }
+            else
+            {
+
+            }
         }
     }
 }

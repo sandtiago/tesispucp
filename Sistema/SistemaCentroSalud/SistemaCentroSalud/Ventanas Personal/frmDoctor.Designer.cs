@@ -123,7 +123,7 @@
             this.tbcDoctor.Location = new System.Drawing.Point(2, 0);
             this.tbcDoctor.Name = "tbcDoctor";
             this.tbcDoctor.SelectedIndex = 0;
-            this.tbcDoctor.Size = new System.Drawing.Size(572, 416);
+            this.tbcDoctor.Size = new System.Drawing.Size(788, 416);
             this.tbcDoctor.TabIndex = 0;
             this.tbcDoctor.Selecting += new System.Windows.Forms.TabControlCancelEventHandler(this.tbcDoctor_Selecting);
             this.tbcDoctor.SelectedIndexChanged += new System.EventHandler(this.tbcDoctor_SelectedIndexChanged);
@@ -308,7 +308,7 @@
             this.tbpDetalle.Location = new System.Drawing.Point(4, 22);
             this.tbpDetalle.Name = "tbpDetalle";
             this.tbpDetalle.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDetalle.Size = new System.Drawing.Size(564, 390);
+            this.tbpDetalle.Size = new System.Drawing.Size(780, 390);
             this.tbpDetalle.TabIndex = 1;
             this.tbpDetalle.Text = "Detalle";
             this.tbpDetalle.UseVisualStyleBackColor = true;
@@ -891,7 +891,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 416);
+            this.ClientSize = new System.Drawing.Size(788, 416);
             this.Controls.Add(this.tbcDoctor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using Comun;
 
 namespace SistemaCentroSalud.Ventanas_Doctor
 {
@@ -29,7 +30,8 @@ namespace SistemaCentroSalud.Ventanas_Doctor
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            tbcHistoriaClinica.SelectedTab = tbpDetalle;
+            clsComun.tabSiguiente(tbcHistoriaClinica, tbpBuscar, tbpDetalle);
+            
             rtxtEctoscopiaActual.Focus();
         }
 
@@ -52,6 +54,22 @@ namespace SistemaCentroSalud.Ventanas_Doctor
             else
             {
                 MessageBox.Show("Debe seleccionar una historia clínica", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void tbcHistoriaClinica_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if (e.TabPage.Enabled == false)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void tbcHistoriaClinica_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tbcHistoriaClinica.SelectedIndex == 1)
+            {
+                tbpBuscar.Enabled = false;
             }
         }
     }
