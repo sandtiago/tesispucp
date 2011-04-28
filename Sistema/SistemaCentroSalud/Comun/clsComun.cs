@@ -61,7 +61,7 @@ namespace Comun
                 string asunto = "Contraseña Biblioteca Virtual";
                 string cuerpo = "";
 
-                correo.From = new MailAddress("wilder.young@gmail.com", "Biblioteca Virtual Soporte", System.Text.Encoding.UTF8);
+                correo.From = new MailAddress("sistema.centro.salud@gmail.com", "Sistema Centro de Salud", System.Text.Encoding.UTF8);
                 correo.To.Add(destinatario);
                 correo.Subject = asunto;
                 correo.SubjectEncoding = System.Text.Encoding.UTF8;
@@ -86,7 +86,7 @@ namespace Comun
                 smtp.Host = "smtp.gmail.com";
                 smtp.Port = 587;
                 smtp.EnableSsl = true;
-                smtp.Credentials = new System.Net.NetworkCredential("wilder.young@gmail.com", "97407212");
+                smtp.Credentials = new System.Net.NetworkCredential("sistema.centro.salud@gmail.com", "tesispucp");
                 try
                 {
                     smtp.Send(correo);
