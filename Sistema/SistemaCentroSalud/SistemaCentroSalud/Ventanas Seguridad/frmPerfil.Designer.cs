@@ -31,38 +31,38 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPerfil));
             this.tbcPerfil = new System.Windows.Forms.TabControl();
             this.tbpBuscar = new System.Windows.Forms.TabPage();
-            this.tbpDetalle = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.gbxPermisos = new System.Windows.Forms.GroupBox();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btnTodoDerecha = new System.Windows.Forms.Button();
-            this.btnDerecha = new System.Windows.Forms.Button();
-            this.btnIzquierda = new System.Windows.Forms.Button();
-            this.btnTodoIzquierda = new System.Windows.Forms.Button();
-            this.lblArea = new System.Windows.Forms.Label();
-            this.cboArea = new System.Windows.Forms.ComboBox();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.gbxCriterios = new System.Windows.Forms.GroupBox();
-            this.dgvPerfiles = new System.Windows.Forms.DataGridView();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnInactivar = new System.Windows.Forms.Button();
             this.btnActivar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnInactivar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.dgvPerfiles = new System.Windows.Forms.DataGridView();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colArea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbxCriterios = new System.Windows.Forms.GroupBox();
+            this.tbpDetalle = new System.Windows.Forms.TabPage();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.gbxPermisos = new System.Windows.Forms.GroupBox();
+            this.btnTodoIzquierda = new System.Windows.Forms.Button();
+            this.btnIzquierda = new System.Windows.Forms.Button();
+            this.btnDerecha = new System.Windows.Forms.Button();
+            this.btnTodoDerecha = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.cboArea = new System.Windows.Forms.ComboBox();
+            this.lblArea = new System.Windows.Forms.Label();
             this.txtNombre = new SistemaCentroSalud.Controles.cuTextBox();
             this.tbcPerfil.SuspendLayout();
             this.tbpBuscar.SuspendLayout();
-            this.tbpDetalle.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.gbxPermisos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPerfiles)).BeginInit();
+            this.tbpDetalle.SuspendLayout();
+            this.gbxPermisos.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbcPerfil
@@ -93,189 +93,30 @@
             this.tbpBuscar.Text = "Buscar";
             this.tbpBuscar.UseVisualStyleBackColor = true;
             // 
-            // tbpDetalle
+            // btnSalir
             // 
-            this.tbpDetalle.Controls.Add(this.btnGuardar);
-            this.tbpDetalle.Controls.Add(this.btnCancelar);
-            this.tbpDetalle.Controls.Add(this.gbxPermisos);
-            this.tbpDetalle.Controls.Add(this.groupBox1);
-            this.tbpDetalle.Location = new System.Drawing.Point(4, 22);
-            this.tbpDetalle.Name = "tbpDetalle";
-            this.tbpDetalle.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpDetalle.Size = new System.Drawing.Size(451, 292);
-            this.tbpDetalle.TabIndex = 1;
-            this.tbpDetalle.Text = "Detalle";
-            this.tbpDetalle.UseVisualStyleBackColor = true;
+            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
+            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalir.Location = new System.Drawing.Point(368, 262);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // groupBox1
+            // btnInactivar
             // 
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.lblNombre);
-            this.groupBox1.Controls.Add(this.cboArea);
-            this.groupBox1.Controls.Add(this.lblArea);
-            this.groupBox1.Location = new System.Drawing.Point(8, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(545, 69);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // gbxPermisos
-            // 
-            this.gbxPermisos.Controls.Add(this.btnTodoIzquierda);
-            this.gbxPermisos.Controls.Add(this.btnIzquierda);
-            this.gbxPermisos.Controls.Add(this.btnDerecha);
-            this.gbxPermisos.Controls.Add(this.btnTodoDerecha);
-            this.gbxPermisos.Controls.Add(this.listBox1);
-            this.gbxPermisos.Controls.Add(this.treeView1);
-            this.gbxPermisos.Location = new System.Drawing.Point(8, 81);
-            this.gbxPermisos.Name = "gbxPermisos";
-            this.gbxPermisos.Size = new System.Drawing.Size(545, 171);
-            this.gbxPermisos.TabIndex = 3;
-            this.gbxPermisos.TabStop = false;
-            this.gbxPermisos.Text = "Permisos";
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(9, 19);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(212, 134);
-            this.treeView1.TabIndex = 4;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(322, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(212, 134);
-            this.listBox1.TabIndex = 9;
-            // 
-            // btnTodoDerecha
-            // 
-            this.btnTodoDerecha.Location = new System.Drawing.Point(234, 24);
-            this.btnTodoDerecha.Name = "btnTodoDerecha";
-            this.btnTodoDerecha.Size = new System.Drawing.Size(75, 23);
-            this.btnTodoDerecha.TabIndex = 5;
-            this.btnTodoDerecha.Text = ">>";
-            this.btnTodoDerecha.UseVisualStyleBackColor = true;
-            // 
-            // btnDerecha
-            // 
-            this.btnDerecha.Location = new System.Drawing.Point(234, 57);
-            this.btnDerecha.Name = "btnDerecha";
-            this.btnDerecha.Size = new System.Drawing.Size(75, 23);
-            this.btnDerecha.TabIndex = 6;
-            this.btnDerecha.Text = ">";
-            this.btnDerecha.UseVisualStyleBackColor = true;
-            // 
-            // btnIzquierda
-            // 
-            this.btnIzquierda.Location = new System.Drawing.Point(234, 90);
-            this.btnIzquierda.Name = "btnIzquierda";
-            this.btnIzquierda.Size = new System.Drawing.Size(75, 23);
-            this.btnIzquierda.TabIndex = 7;
-            this.btnIzquierda.Text = "<";
-            this.btnIzquierda.UseVisualStyleBackColor = true;
-            // 
-            // btnTodoIzquierda
-            // 
-            this.btnTodoIzquierda.Location = new System.Drawing.Point(234, 123);
-            this.btnTodoIzquierda.Name = "btnTodoIzquierda";
-            this.btnTodoIzquierda.Size = new System.Drawing.Size(75, 23);
-            this.btnTodoIzquierda.TabIndex = 8;
-            this.btnTodoIzquierda.Text = "<<";
-            this.btnTodoIzquierda.UseVisualStyleBackColor = true;
-            // 
-            // lblArea
-            // 
-            this.lblArea.AutoSize = true;
-            this.lblArea.Location = new System.Drawing.Point(6, 16);
-            this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(32, 13);
-            this.lblArea.TabIndex = 0;
-            this.lblArea.Text = "Área:";
-            // 
-            // cboArea
-            // 
-            this.cboArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboArea.FormattingEnabled = true;
-            this.cboArea.Location = new System.Drawing.Point(9, 32);
-            this.cboArea.Name = "cboArea";
-            this.cboArea.Size = new System.Drawing.Size(150, 21);
-            this.cboArea.TabIndex = 1;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(231, 16);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre:";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
-            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardar.Location = new System.Drawing.Point(467, 258);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 10;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(351, 258);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 11;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // gbxCriterios
-            // 
-            this.gbxCriterios.Location = new System.Drawing.Point(8, 6);
-            this.gbxCriterios.Name = "gbxCriterios";
-            this.gbxCriterios.Size = new System.Drawing.Size(435, 100);
-            this.gbxCriterios.TabIndex = 0;
-            this.gbxCriterios.TabStop = false;
-            this.gbxCriterios.Text = "Criterios de Búsqueda";
-            // 
-            // dgvPerfiles
-            // 
-            this.dgvPerfiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPerfiles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNombre,
-            this.colArea,
-            this.colEstado});
-            this.dgvPerfiles.Location = new System.Drawing.Point(8, 112);
-            this.dgvPerfiles.Name = "dgvPerfiles";
-            this.dgvPerfiles.Size = new System.Drawing.Size(435, 144);
-            this.dgvPerfiles.TabIndex = 1;
-            // 
-            // colNombre
-            // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.Name = "colNombre";
-            this.colNombre.ReadOnly = true;
-            // 
-            // colArea
-            // 
-            this.colArea.HeaderText = "Área";
-            this.colArea.Name = "colArea";
-            this.colArea.ReadOnly = true;
-            // 
-            // colEstado
-            // 
-            this.colEstado.HeaderText = "Estado";
-            this.colEstado.Name = "colEstado";
-            this.colEstado.ReadOnly = true;
-            this.colEstado.Visible = false;
+            this.btnInactivar.Image = ((System.Drawing.Image)(resources.GetObject("btnInactivar.Image")));
+            this.btnInactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInactivar.Location = new System.Drawing.Point(279, 262);
+            this.btnInactivar.Name = "btnInactivar";
+            this.btnInactivar.Size = new System.Drawing.Size(75, 23);
+            this.btnInactivar.TabIndex = 18;
+            this.btnInactivar.Text = "Inactivar";
+            this.btnInactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInactivar.UseVisualStyleBackColor = true;
             // 
             // btnActivar
             // 
@@ -329,30 +170,196 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // btnInactivar
+            // dgvPerfiles
             // 
-            this.btnInactivar.Image = ((System.Drawing.Image)(resources.GetObject("btnInactivar.Image")));
-            this.btnInactivar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInactivar.Location = new System.Drawing.Point(279, 262);
-            this.btnInactivar.Name = "btnInactivar";
-            this.btnInactivar.Size = new System.Drawing.Size(75, 23);
-            this.btnInactivar.TabIndex = 18;
-            this.btnInactivar.Text = "Inactivar";
-            this.btnInactivar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInactivar.UseVisualStyleBackColor = true;
+            this.dgvPerfiles.AllowUserToAddRows = false;
+            this.dgvPerfiles.AllowUserToDeleteRows = false;
+            this.dgvPerfiles.AllowUserToResizeColumns = false;
+            this.dgvPerfiles.AllowUserToResizeRows = false;
+            this.dgvPerfiles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPerfiles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNombre,
+            this.colArea,
+            this.colEstado});
+            this.dgvPerfiles.Location = new System.Drawing.Point(8, 112);
+            this.dgvPerfiles.MultiSelect = false;
+            this.dgvPerfiles.Name = "dgvPerfiles";
+            this.dgvPerfiles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPerfiles.Size = new System.Drawing.Size(435, 144);
+            this.dgvPerfiles.TabIndex = 1;
             // 
-            // btnSalir
+            // colNombre
             // 
-            this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
-            this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(368, 262);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 19;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.Name = "colNombre";
+            this.colNombre.ReadOnly = true;
+            // 
+            // colArea
+            // 
+            this.colArea.HeaderText = "Área";
+            this.colArea.Name = "colArea";
+            this.colArea.ReadOnly = true;
+            // 
+            // colEstado
+            // 
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.Name = "colEstado";
+            this.colEstado.ReadOnly = true;
+            this.colEstado.Visible = false;
+            // 
+            // gbxCriterios
+            // 
+            this.gbxCriterios.Location = new System.Drawing.Point(8, 6);
+            this.gbxCriterios.Name = "gbxCriterios";
+            this.gbxCriterios.Size = new System.Drawing.Size(435, 100);
+            this.gbxCriterios.TabIndex = 0;
+            this.gbxCriterios.TabStop = false;
+            this.gbxCriterios.Text = "Criterios de Búsqueda";
+            // 
+            // tbpDetalle
+            // 
+            this.tbpDetalle.Controls.Add(this.btnGuardar);
+            this.tbpDetalle.Controls.Add(this.btnCancelar);
+            this.tbpDetalle.Controls.Add(this.gbxPermisos);
+            this.tbpDetalle.Controls.Add(this.groupBox1);
+            this.tbpDetalle.Location = new System.Drawing.Point(4, 22);
+            this.tbpDetalle.Name = "tbpDetalle";
+            this.tbpDetalle.Padding = new System.Windows.Forms.Padding(3);
+            this.tbpDetalle.Size = new System.Drawing.Size(451, 292);
+            this.tbpDetalle.TabIndex = 1;
+            this.tbpDetalle.Text = "Detalle";
+            this.tbpDetalle.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(467, 258);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 10;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(351, 258);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // gbxPermisos
+            // 
+            this.gbxPermisos.Controls.Add(this.btnTodoIzquierda);
+            this.gbxPermisos.Controls.Add(this.btnIzquierda);
+            this.gbxPermisos.Controls.Add(this.btnDerecha);
+            this.gbxPermisos.Controls.Add(this.btnTodoDerecha);
+            this.gbxPermisos.Controls.Add(this.listBox1);
+            this.gbxPermisos.Controls.Add(this.treeView1);
+            this.gbxPermisos.Location = new System.Drawing.Point(8, 81);
+            this.gbxPermisos.Name = "gbxPermisos";
+            this.gbxPermisos.Size = new System.Drawing.Size(545, 171);
+            this.gbxPermisos.TabIndex = 3;
+            this.gbxPermisos.TabStop = false;
+            this.gbxPermisos.Text = "Permisos";
+            // 
+            // btnTodoIzquierda
+            // 
+            this.btnTodoIzquierda.Location = new System.Drawing.Point(234, 123);
+            this.btnTodoIzquierda.Name = "btnTodoIzquierda";
+            this.btnTodoIzquierda.Size = new System.Drawing.Size(75, 23);
+            this.btnTodoIzquierda.TabIndex = 8;
+            this.btnTodoIzquierda.Text = "<<";
+            this.btnTodoIzquierda.UseVisualStyleBackColor = true;
+            // 
+            // btnIzquierda
+            // 
+            this.btnIzquierda.Location = new System.Drawing.Point(234, 90);
+            this.btnIzquierda.Name = "btnIzquierda";
+            this.btnIzquierda.Size = new System.Drawing.Size(75, 23);
+            this.btnIzquierda.TabIndex = 7;
+            this.btnIzquierda.Text = "<";
+            this.btnIzquierda.UseVisualStyleBackColor = true;
+            // 
+            // btnDerecha
+            // 
+            this.btnDerecha.Location = new System.Drawing.Point(234, 57);
+            this.btnDerecha.Name = "btnDerecha";
+            this.btnDerecha.Size = new System.Drawing.Size(75, 23);
+            this.btnDerecha.TabIndex = 6;
+            this.btnDerecha.Text = ">";
+            this.btnDerecha.UseVisualStyleBackColor = true;
+            // 
+            // btnTodoDerecha
+            // 
+            this.btnTodoDerecha.Location = new System.Drawing.Point(234, 24);
+            this.btnTodoDerecha.Name = "btnTodoDerecha";
+            this.btnTodoDerecha.Size = new System.Drawing.Size(75, 23);
+            this.btnTodoDerecha.TabIndex = 5;
+            this.btnTodoDerecha.Text = ">>";
+            this.btnTodoDerecha.UseVisualStyleBackColor = true;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(322, 19);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(212, 134);
+            this.listBox1.TabIndex = 9;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(9, 19);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(212, 134);
+            this.treeView1.TabIndex = 4;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtNombre);
+            this.groupBox1.Controls.Add(this.lblNombre);
+            this.groupBox1.Controls.Add(this.cboArea);
+            this.groupBox1.Controls.Add(this.lblArea);
+            this.groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(545, 69);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(231, 16);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre:";
+            // 
+            // cboArea
+            // 
+            this.cboArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboArea.FormattingEnabled = true;
+            this.cboArea.Location = new System.Drawing.Point(9, 32);
+            this.cboArea.Name = "cboArea";
+            this.cboArea.Size = new System.Drawing.Size(150, 21);
+            this.cboArea.TabIndex = 1;
+            // 
+            // lblArea
+            // 
+            this.lblArea.AutoSize = true;
+            this.lblArea.Location = new System.Drawing.Point(6, 16);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(32, 13);
+            this.lblArea.TabIndex = 0;
+            this.lblArea.Text = "Área:";
             // 
             // txtNombre
             // 
@@ -378,11 +385,11 @@
             this.Load += new System.EventHandler(this.frmPerfil_Load);
             this.tbcPerfil.ResumeLayout(false);
             this.tbpBuscar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPerfiles)).EndInit();
             this.tbpDetalle.ResumeLayout(false);
+            this.gbxPermisos.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbxPermisos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPerfiles)).EndInit();
             this.ResumeLayout(false);
 
         }

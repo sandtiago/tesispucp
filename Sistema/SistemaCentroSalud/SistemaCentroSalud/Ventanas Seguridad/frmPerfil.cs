@@ -70,7 +70,7 @@ namespace SistemaCentroSalud.Ventanas_Seguridad
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un doctor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Debe seleccionar un perfil", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -82,13 +82,20 @@ namespace SistemaCentroSalud.Ventanas_Seguridad
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un doctor", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Debe seleccionar un perfil", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            tabAnterior();
+
+            reducirVentana();
         }
     }
 }
