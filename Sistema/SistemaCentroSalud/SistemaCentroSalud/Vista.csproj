@@ -133,9 +133,6 @@
     <EmbeddedResource Include="Ventanas Personal\frmTecnico.resx">
       <DependentUpon>frmTecnico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventanas Seguridad\frmPerfil.resx">
-      <DependentUpon>frmPerfil.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -172,12 +169,6 @@
     </Compile>
     <Compile Include="Ventanas Personal\frmTecnico.Designer.cs">
       <DependentUpon>frmTecnico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ventanas Seguridad\frmPerfil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Ventanas Seguridad\frmPerfil.Designer.cs">
-      <DependentUpon>frmPerfil.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
