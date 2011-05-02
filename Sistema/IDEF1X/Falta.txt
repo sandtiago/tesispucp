@@ -1,0 +1,4 @@
+- Datos de SEM y los centros de salud
+- Horarios
+- Historia Clinica
+- Formulario HIS
