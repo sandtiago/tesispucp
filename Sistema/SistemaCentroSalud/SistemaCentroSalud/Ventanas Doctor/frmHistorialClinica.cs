@@ -31,6 +31,8 @@ namespace SistemaCentroSalud.Ventanas_Doctor
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             clsComun.tabSiguiente(tbcHistoriaClinica, tbpBuscar, tbpDetalle);
+
+            tbcHistoriaClinicaPartes.SelectedTab = tbpEctoscopia;
             
             rtxtEctoscopiaActual.Focus();
         }
@@ -71,6 +73,11 @@ namespace SistemaCentroSalud.Ventanas_Doctor
             {
                 tbpBuscar.Enabled = false;
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            clsComun.tabAnterior(tbcHistoriaClinica, tbpBuscar, tbpDetalle);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace SistemaCentroSalud.Controles
 
         public enum TipoTextBox : int
         {
-            Mixto = 0, SoloNumeros = 1, SoloLetras = 2
+            Mixto = 0, Letras = 1, Enteros = 2, Decimales = 3 
         };
 
         public enum SoloLectura : int
@@ -52,7 +52,7 @@ namespace SistemaCentroSalud.Controles
             set
             {
                 soloLectura = value;
-                
+
                 if (soloLectura == SoloLectura.verdadero)
                 {
                     this.ReadOnly = true;
@@ -83,7 +83,9 @@ namespace SistemaCentroSalud.Controles
 
         protected override void OnKeyPress(KeyPressEventArgs e)
         {
-            if (tipoCajaTexto == TipoTextBox.SoloNumeros)
+            Clipboard.Clear();
+
+            if (tipoCajaTexto == TipoTextBox.Enteros)
             {
                 if (Char.IsDigit(e.KeyChar))
                 {
@@ -98,7 +100,7 @@ namespace SistemaCentroSalud.Controles
                     e.Handled = true;
                 }
             }
-            else if (tipoCajaTexto == TipoTextBox.SoloLetras)
+            else if (tipoCajaTexto == TipoTextBox.Letras)
             {
                 if (Char.IsLetter(e.KeyChar))
                 {
@@ -111,6 +113,24 @@ namespace SistemaCentroSalud.Controles
                 else if (Char.IsSeparator(e.KeyChar))
                 {
                     e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+            else if (tipoCajaTexto == TipoTextBox.Decimales)
+            {
+                if (Char.IsDigit(e.KeyChar) || e.KeyChar == '.' || Char.IsControl(e.KeyChar))
+                {
+                    if (e.KeyChar == '.' && this.Text.IndexOf(".") > 0)
+                    {
+                        e.Handled = true;
+                    }
+                    else
+                    {
+                        e.Handled = false;
+                    }
                 }
                 else
                 {

@@ -55,8 +55,6 @@
             this.smnuBarraEstado = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMantenimiento = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuArea = new System.Windows.Forms.ToolStripMenuItem();
-            this.médicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrativasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smnuEspecialidad = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.horarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -282,6 +280,7 @@
             this.smnuFormularioHIS.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.smnuFormularioHIS.Size = new System.Drawing.Size(209, 22);
             this.smnuFormularioHIS.Text = "Formulario HIS";
+            this.smnuFormularioHIS.Click += new System.EventHandler(this.smnuFormularioHIS_Click);
             // 
             // mnuVer
             // 
@@ -325,24 +324,9 @@
             // 
             // smnuArea
             // 
-            this.smnuArea.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.médicasToolStripMenuItem,
-            this.administrativasToolStripMenuItem});
             this.smnuArea.Name = "smnuArea";
             this.smnuArea.Size = new System.Drawing.Size(197, 22);
             this.smnuArea.Text = "Áreas";
-            // 
-            // médicasToolStripMenuItem
-            // 
-            this.médicasToolStripMenuItem.Name = "médicasToolStripMenuItem";
-            this.médicasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.médicasToolStripMenuItem.Text = "Médicas";
-            // 
-            // administrativasToolStripMenuItem
-            // 
-            this.administrativasToolStripMenuItem.Name = "administrativasToolStripMenuItem";
-            this.administrativasToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.administrativasToolStripMenuItem.Text = "Administrativas";
             // 
             // smnuEspecialidad
             // 
@@ -376,7 +360,7 @@
             // 
             this.smnuCalculadora.Image = ((System.Drawing.Image)(resources.GetObject("smnuCalculadora.Image")));
             this.smnuCalculadora.Name = "smnuCalculadora";
-            this.smnuCalculadora.Size = new System.Drawing.Size(147, 22);
+            this.smnuCalculadora.Size = new System.Drawing.Size(152, 22);
             this.smnuCalculadora.Text = "Calculadora";
             this.smnuCalculadora.Click += new System.EventHandler(this.smnuCalculadora_Click);
             // 
@@ -384,7 +368,7 @@
             // 
             this.smnuBlocDeNotas.Image = ((System.Drawing.Image)(resources.GetObject("smnuBlocDeNotas.Image")));
             this.smnuBlocDeNotas.Name = "smnuBlocDeNotas";
-            this.smnuBlocDeNotas.Size = new System.Drawing.Size(147, 22);
+            this.smnuBlocDeNotas.Size = new System.Drawing.Size(152, 22);
             this.smnuBlocDeNotas.Text = "Bloc de Notas";
             this.smnuBlocDeNotas.Click += new System.EventHandler(this.smnuBlocDeNotas_Click);
             // 
@@ -403,7 +387,7 @@
             // 
             this.smnuPerfil.Image = ((System.Drawing.Image)(resources.GetObject("smnuPerfil.Image")));
             this.smnuPerfil.Name = "smnuPerfil";
-            this.smnuPerfil.Size = new System.Drawing.Size(123, 22);
+            this.smnuPerfil.Size = new System.Drawing.Size(152, 22);
             this.smnuPerfil.Text = "Perfil";
             this.smnuPerfil.Click += new System.EventHandler(this.smnuPerfil_Click);
             // 
@@ -411,19 +395,19 @@
             // 
             this.auditoríaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("auditoríaToolStripMenuItem.Image")));
             this.auditoríaToolStripMenuItem.Name = "auditoríaToolStripMenuItem";
-            this.auditoríaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.auditoríaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.auditoríaToolStripMenuItem.Text = "Auditoría";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(120, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // smnuRespaldo
             // 
             this.smnuRespaldo.Image = ((System.Drawing.Image)(resources.GetObject("smnuRespaldo.Image")));
             this.smnuRespaldo.Name = "smnuRespaldo";
-            this.smnuRespaldo.Size = new System.Drawing.Size(123, 22);
+            this.smnuRespaldo.Size = new System.Drawing.Size(152, 22);
             this.smnuRespaldo.Text = "Respaldo";
             // 
             // mnuReportes
@@ -711,8 +695,6 @@
         private System.Windows.Forms.ToolStripMenuItem smnuCalculadora;
         private System.Windows.Forms.ToolStripMenuItem smnuBlocDeNotas;
         private System.Windows.Forms.ToolStripMenuItem auditoríaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem médicasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administrativasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem smnuConsulta;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
