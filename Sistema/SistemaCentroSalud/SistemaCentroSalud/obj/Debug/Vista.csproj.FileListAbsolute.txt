@@ -43,3 +43,6 @@ C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.Ventanas_Seguridad.frmPerfil.resources
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\bin\Debug\Control.dll
 C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\bin\Debug\Control.pdb
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.frmCita.resources
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.frmFormularioHIS.resources
+C:\Users\Wilder\Desktop\Google Code\Repositorio Tesis\Sistema\SistemaCentroSalud\SistemaCentroSalud\obj\Debug\SistemaCentroSalud.frmConsulta.resources

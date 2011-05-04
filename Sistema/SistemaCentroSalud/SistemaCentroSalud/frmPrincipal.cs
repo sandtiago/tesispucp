@@ -230,6 +230,7 @@ namespace SistemaCentroSalud
 
             frmHistorialClinica ventanaHistoriaClinica = new frmHistorialClinica(blnHistoriaClinicaCompleta);
             ventanaHistoriaClinica.MdiParent = this;
+            ventanaHistoriaClinica.WindowState = FormWindowState.Maximized;
             ventanaHistoriaClinica.Show();
         }
 
@@ -265,6 +266,13 @@ namespace SistemaCentroSalud
             frmHistorialClinica ventanaHistoriaClinica = new frmHistorialClinica(blnHistoriaClinicaCompleta);
             ventanaHistoriaClinica.MdiParent = this;
             ventanaHistoriaClinica.Show();
+        }
+
+        private void smnuFormularioHIS_Click(object sender, EventArgs e)
+        {
+            frmFormularioHIS ventanaFormularios = new frmFormularioHIS();
+            ventanaFormularios.MdiParent = this;
+            ventanaFormularios.Show();
         }
     }
 }

@@ -151,17 +151,5 @@ namespace Comun
             frmVentana.Width = numAncho;
             frmVentana.Height = numAlto;
         }
-
-        public static void llenarComboBox(ComboBox cbo, int numIndicePorDefecto)
-        {
-            if (numIndicePorDefecto == -1)
-            {
-
-            }
-            else
-            {
-
-            }
-        }
     }
 }

@@ -399,7 +399,7 @@
             this.txtCelular.Size = new System.Drawing.Size(112, 20);
             this.txtCelular.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtCelular.TabIndex = 29;
-            this.txtCelular.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloNumeros;
+            this.txtCelular.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Enteros;
             // 
             // txtTelefono
             // 
@@ -408,7 +408,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(112, 20);
             this.txtTelefono.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtTelefono.TabIndex = 28;
-            this.txtTelefono.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloNumeros;
+            this.txtTelefono.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Enteros;
             // 
             // lblCorreoElectronico
             // 
@@ -682,7 +682,7 @@
             this.txtCMP.Size = new System.Drawing.Size(100, 20);
             this.txtCMP.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtCMP.TabIndex = 11;
-            this.txtCMP.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloNumeros;
+            this.txtCMP.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Enteros;
             // 
             // lblCMP
             // 
@@ -765,7 +765,7 @@
             this.txtNumeroDocumento.Size = new System.Drawing.Size(125, 20);
             this.txtNumeroDocumento.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtNumeroDocumento.TabIndex = 7;
-            this.txtNumeroDocumento.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloNumeros;
+            this.txtNumeroDocumento.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Enteros;
             // 
             // txtNombres
             // 
@@ -774,7 +774,7 @@
             this.txtNombres.Size = new System.Drawing.Size(259, 20);
             this.txtNombres.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtNombres.TabIndex = 3;
-            this.txtNombres.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloLetras;
+            this.txtNombres.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Letras;
             // 
             // txtMaterno
             // 
@@ -783,7 +783,7 @@
             this.txtMaterno.Size = new System.Drawing.Size(125, 20);
             this.txtMaterno.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtMaterno.TabIndex = 2;
-            this.txtMaterno.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloLetras;
+            this.txtMaterno.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Letras;
             // 
             // txtPaterno
             // 
@@ -792,7 +792,7 @@
             this.txtPaterno.Size = new System.Drawing.Size(125, 20);
             this.txtPaterno.Solo_Lectura = SistemaCentroSalud.Controles.cuTextBox.SoloLectura.falso;
             this.txtPaterno.TabIndex = 1;
-            this.txtPaterno.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.SoloLetras;
+            this.txtPaterno.TipoCajaTexto = SistemaCentroSalud.Controles.cuTextBox.TipoTextBox.Letras;
             // 
             // dtpFechaNacimiento
             // 
