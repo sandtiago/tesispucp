@@ -324,6 +324,7 @@
             // 
             // smnuArea
             // 
+            this.smnuArea.Image = ((System.Drawing.Image)(resources.GetObject("smnuArea.Image")));
             this.smnuArea.Name = "smnuArea";
             this.smnuArea.Size = new System.Drawing.Size(197, 22);
             this.smnuArea.Text = "Áreas";
